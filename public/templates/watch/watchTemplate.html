@@ -1,0 +1,31 @@
+<div class="main-table">
+<div class="table-heading">
+	<div class="inner-table-title">symbol</div>
+	<div class="inner-table-title">Bid</div>
+	<div class="inner-table-title">Ask</div>
+	<div class="inner-table-title">Last</div>
+	<div class="inner-table-title">chg($)</div>
+	<div class="inner-table-title">chg(%)</div>
+	<div class="inner-table-title">open</div>
+	<div class="inner-table-title">High</div>
+	<div class="inner-table-title">Low</div>
+	<div class="inner-table-title">Vol</div>
+</div>
+
+<%  i=1 %>
+<% _.each(watchlists, function(watchlists){ %>
+<div class="table-data">
+	<div class="inner-table-title stock-symbol"><%= watchlists["symbol"] %></div>
+    <div class="inner-table-title"><%= watchlists["bid"] %></div>
+    <div class="inner-table-title"><%= watchlists["ask"] %></div>
+    <div class="inner-table-title"><%= watchlists["last"] %></div>
+    <div class="inner-table-title"><%= watchlists["chgd"] %></div>
+    <div class="inner-table-title"><%= watchlists["chgp"] %></div>
+    <div class="inner-table-title"><%= watchlists["open"] %></div>
+    <div class="inner-table-title"><%= watchlists["high"] %></div>
+    <div class="inner-table-title"><%= watchlists["low"] %></div>
+    <div class="inner-table-title"><%= watchlists["vol"] %></div>
+	</div>
+  <% }); %>
+  
+</div>

@@ -1,0 +1,132 @@
+body {
+  font-family: sans-serif;
+  font-size: 14px; }
+
+.navbar {
+  width: 100%; }
+
+.nav {
+  padding-top: 8px;
+  padding-bottom: 20px; }
+
+.nav > a.active {
+  background-color: #048d04;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px; }
+
+#stock-list {
+  width: 100%; 
+}
+
+.stock-name {
+  width: 40%;
+  background-color: #ededed;
+  margin-bottom: 8px;
+  background-image: url("/images/pluse.jpg");
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: 5px; 
+}
+
+.stock-name a {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid rgba(206, 204, 205, 0.5);
+  display: block;
+  padding: 10px 10px 10px 32px;
+  font-weight: bold; 
+}
+.stock-name.open{
+ background-image: url("/images/mines.jpg");
+        background-repeat: no-repeat;
+        background-size: 15px 15px;
+        background-position: 5px;    
+}
+/* Main div for table structure*/
+.main-table {
+  width: 100%; 
+}
+.table-heading {
+  width: 100%;
+  float: left;
+  text-align: center; }
+
+.table-data {
+  width: 100%;
+  float: left;
+  text-align: center; }
+
+.inner-table-title {
+  width: 9%;
+  float: left;
+  padding: 5px; 
+  border-right:4px solid #fff;
+}
+
+.stock-text label {
+  float: left;
+  width: 10%;
+  font-weight: normal;
+  border-right: 1px solid #E2E2E2;
+  padding-top: 10px; }
+
+.add-symbol-text {
+  float: left;
+  width: 30%;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 1px;
+  border-right: 1px solid #E2E2E2; 
+}
+
+.stock-view-text label {
+  float: left;
+  width: 30%;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: normal;
+  border-right: 1px solid #E2E2E2;
+  padding-top: 10px; }
+
+.mini-max-text {
+  float: left;
+  width: 3%;
+  border-right: 1px solid #E2E2E2;
+  padding: 2px 5px; }
+
+.stock-settings-text {
+  float: left;
+  width: 3%;
+  padding: 2px 5px; }
+
+.space {
+  clear: both; }
+
+.stock-dropbox {
+  width: 60%;
+  float: right;
+  background-color: #ededed;
+  margin-top: -45px;
+  padding-bottom: 5px; }
+
+.table-data:nth-child(even) {
+  background-color: #ededed; }
+
+.table-data:nth-child(odd) {
+  background-color: #fff; }
+
+.stock-dropbox-empty {
+  width: 60%;
+  float: right;
+  background-color: #ededed;
+  margin-top: -45px;
+  padding-bottom: 37px; }
+
+.stock-symbol {
+  background-image: url("/images/arrow.jpg");
+  background-repeat: no-repeat;
+  background-size: 15px 12px;
+  background-position: 95px; 
+}

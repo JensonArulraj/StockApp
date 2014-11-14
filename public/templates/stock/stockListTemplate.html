@@ -1,0 +1,18 @@
+<% _.each(stocks, function(stocks){ %>
+   <div class="stock-name" id="stock-name"><a href="#/<%= stocks.get("url") %>"><%= stocks.get("title") %></a></div><% if(stocks.get("title") == "HealthCareMarket") { %>
+       <div class="stock-dropbox"><div class="stock-text"><label>Microcharts</label></div>
+      	    <div class="add-symbol-text"><input type="text" name="AddSymbol" value="Add symboll(s)"><input type="button" name="symbol-add" value="Add"></div>
+      	    <div class="viewtxt">
+      	        <label>view
+      	        <select name="view">
+      	           <option value="">Snapshot (default)</option>
+      	        </select>
+      	        </label>
+      	    </div>
+      	    <div class="minmaxtxt"><img src="images/minmax.jpg" title="MinMax" alt="MinMax" width="30px" height="25px"></div>
+      	    <div class="settingstxt"><img src="images/settings.jpg" title="Settings" alt="Settings" width="30px" height="25px"></div></div>
+       <% }  else { %>
+           <div class="stock-dropbox-empty"></div>
+           <% } %>
+   <div id="<%= stocks.get("url") %>-details"></div>
+  <% }); %>
